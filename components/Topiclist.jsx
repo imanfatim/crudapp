@@ -20,13 +20,13 @@ const getTopics= async ()=>{
 };
 
 
-export default async function Topiclist(){
-    const { topics,settopics} = await getTopics();
+export default async function TopicList(){
+    const { topic } = await getTopics();
 
 
     return(
         <>
-        {topics.map(t=>(
+        {topic.map(t=>(
         <div className="p-6 border border-slate-300 my-3 flex justify-between gap-5 items-start">
             <div>
                 <h2 className=" font-bold text-2xl"> {t.title} </h2>

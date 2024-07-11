@@ -1,5 +1,4 @@
-import Topiclist from "@/components/topiclist";
-import Image from "next/image";
+import Topiclist from "@/components/TopicList";
 
 export default function Home() {
   return (
